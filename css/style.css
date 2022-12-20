@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1{
+        font-size: 75px;
+        color: #fff;
+        font-weight: 700;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 45px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+    .glbl-btn {
+        background-color: #ff2e00;
+        color: #fff;
+        padding: 12px 20px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 4px;
+        display: inline-block;
+    }
+    .glbl-btn:hover{
+        color: #fff;
+    }
+    section{
+        padding: 70px 0;
+    }
+    form {
+        border: 1px solid #fff;
+        padding: 25px;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+    form .form-group {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    form .form-group label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    form .form-control{
+        transition: all 0.5s;
+    }
+    form .form-control:focus {
+        border-color: #ff2e00;
+        outline: 0;
+        box-shadow: unset
+    }
+    form .form-control::placeholder {
+        font-size: 14px;
+    }
+    form textarea {
+        width: 100%;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        outline: none;
+        padding: 15px 12px;
+    }
+    form .glbl-btn{
+        padding: 10px 40px;
+        text-transform: uppercase;
+        width: 100%;
+        border: none;
+    }
+    form .form-group span{
+        position: relative;
+    }
+    form .form-group span .fa{
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            color: #ff2e00;
+            font-size: 14px;
+        }
+
+    .flex{
+        display: flex;
+    }
+    .pd-0{
+        padding: 0px;
+        margin: 0px;
+    }
+
+/* header css */
+.header{
+    width: 100%;
+    float: left;
+    box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
+}
+.header .top-header{
+    background-color: #fe4601;
+}
+.header .top-header .social-network li{
+    display: inline-block;
+    font-size: 22px;
+    border-right: 1px solid #fff;
+    padding: 0px 10px;
+    text-align: center;
+}
+.header .top-header .social-network li:first-child{
+   border-left: 1px solid #fff;
+}
+.header .top-header .social-network li:last-child{
+    float: right;
+    border-right: 0px;
+}
+.header .top-header .social-network li .fa{
+    color: #fff;
+}
+.header .top-header .social-network li span{
+    font-size: 16px;
+    color: #fff;
+    padding-left: 10px;
+}
+.header  .navigation .glbl-btn{ 
+    padding: 12px 18px;
+    font-size: 16px;
+}
+/* navigation */
+.navigation {
+    padding: 15px 0;   
+}
+.navigation .logo img{
+    width: 85%;
+}
+.navigation .menu ul li{
+    display: inline-block;
+    padding-left: 30px;
+}
+.navigation .menu ul li a{
+    color: #5c5c5c;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+.navigation .menu ul li a:hover{
+    color: #ff2e00;
+}
+/* banner */
+.banner{
+    width: 100%;
+    float: left;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../img/banner.webp');
+    padding: 100px 0px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.banner .contant p{
+    color: #fff;
+    font-size: 22px;
+}
+.banner .contant .glbl-btn{
+    padding: 13px 40px;
+    text-transform: uppercase;
+}
+.banner  h5{
+    color: #fff;
+}
+.banner .threepnl .box {
+    text-align: center;
+    background: #ffffff26;
+    padding: 20px;
+    border-radius: 4px;
+    width: 160px;
+    margin-right: 15px;
+}
+.banner .threepnl .box .fa{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 13px;
+}
+.banner .threepnl .box strong{
+    color: #fff;
+    display: block;
+}
+
+/* about */
+.about{
+    width: 100%;
+    float: left;
+}
+/* calculator */
+.calculator{
+    width: 100%;
+    float: left;
+    background-color: #eee;
+}
+.calculator .card{
+    width: 50%;
+    margin: auto;
+}
+#loading {
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 2em auto;
+    border: 2px solid #b3b7e2;
+    border-radius: 50%;
+    border-top-color: #191d3a;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  #results {
+    display: none;
+    transition: display 0.3s;
+  }
+  
